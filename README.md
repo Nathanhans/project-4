@@ -14,6 +14,13 @@ Today, we'll explore how cutting-edge technologies, such as neural network model
 
 We focused on leveraging advanced neural network modeling techniques. Utilizing data from CDC's BRFSS surveys, we identified crucial health indicators and uncovered strong correlations with variables like state of residence through exploratory analysis. Our model development, led by Sally and Kenia, utilized auto-optimization techniques to fine-tune hyperparameters. However, perfect accuracy in model performance metrics raised skepticism about dataset integrity, prompting further investigation into survey methodologies and potential biases.
 
+Key Factors 
+* Dataset - We utilized CDC's BRFSS surveys to collect key health indicators related to heart disease risk factors, refining the dataset to a smaller amount and more relevant variables.
+* Exploratory Analysis & Data Prep - Despite our attempts to streamline the dataset by reducing its complexity through dimensionality reduction, we discovered strong correlations between heart attack risk and diverse variables
+* Initial Model Attempt – We initiated exploration into neural network modeling using auto-optimization technique.
+* Final Model Overview - Our selected model architecture, emphasized key decisions including the choice of activation function, layers, nodes, and epochs.
+* Model Performance - The model's performance metrics, revealed remarkable accuracy but raised skepticism due to the absence of false positives or negatives.
+
 ## Data Source
 
 The dataset covers personal health indicators related to heart disease risk factors, sourced from the Centers for Disease Control and Prevention (CDC) as part of the Behavioral Risk Factor Surveillance System (BRFSS) surveys conducted annually across the United States.
@@ -78,66 +85,95 @@ Overall, this code sets up a neural network model creation method with tunable h
 
 ![](images/best_hyperparameters.png)
 
-**5 Top Model Architectures with Input Layer of 102 and 
-Output Layer of 1 node and Activation Function of Sigmoid:**
+### **5 Top Model Architectures with Input Layer of 102 and Output Layer of 1 node and Activation Function of Sigmoid:**
 
-*Model 1:*
+***Model 1:***
 
-    Hidden Layer 1: 7 nodes, Activation Function: relu
+    Hidden layer 1: 7 units, Activation function: ReLU
+    Hidden layer 2: 1 unit, Activation function: ReLU
+    Hidden layer 3: 9 units, Activation function: ReLU
+    Number of epochs: 7
 
-    Hidden Layer 2: 5 nodes, Activation Function: relu
+*Confusion Matrix*
 
-*Model 2:*
+![](images/model_1_con_mtx.png)
 
-    Hidden Layer 1: 3 nodes, Activation Function: relu
+*Classification Report:*
 
-    Hidden Layer 2: 5 nodes, Activation Function: relu
+![](images/model_1_class_rpt.png)
 
-    Hidden Layer 3: 9 nodes, Activation Function: relu
+*Accuracy Score:*
 
-    Hidden Layer 4: 7 nodes, Activation Function: relu
+![](images/model_1_accuracy.png)
 
-    Hidden Layer 5: 5 nodes, Activation Function: relu
+***Model 2:***
 
-*Model 3:*
+    Hidden layer 1: 9 units, Activation function: ReLU
+    Number of epochs: 20
 
-    Hidden Layer 1: 3 nodes, Activation Function: tanh
+*Confusion Matrix*
 
-    Hidden Layer 2: 5 nodes, Activation Function: tanh
+![](images/model_2_con_mtx.png)
 
-    Hidden Layer 3: 9 nodes, Activation Function: tanh
+*Classification Report:*
 
-    Hidden Layer 4: 9 nodes, Activation Function: tanh
+![](images/model_2_class_rpt.png)
 
-    Hidden Layer 5: 9 nodes, Activation Function: tanh
+*Accuracy Score:*
 
-*Model 4:*
+![](images/model_2_accuracy.png)
 
-    Hidden Layer 1: 1 node, Activation Function: sigmoid
+***Model 3:***
 
-    Hidden Layer 2: 7 nodes, Activation Function: sigmoid
+    Hidden layer 1: 9 units, Activation function: ReLU
+    Number of epochs: 7
 
-    Hidden Layer 3: 5 nodes, Activation Function: sigmoid
+*Confusion Matrix*
 
-    Hidden Layer 4: 1 node, Activation Function: sigmoid
+![](images/model_3_con_mtx.png)
 
-    Hidden Layer 5: 9 nodes, Activation Function: sigmoid
+*Classification Report:*
 
-    Hidden Layer 6: 1 node, Activation Function: sigmoid
+![](images/model_3_class_rpt.png)
 
-*Model 5:*
+*Accuracy Score:*
 
-    Hidden Layer 1: 5 nodes, Activation Function: tanh
+![](images/model_3_accuracy.png)
 
-    Hidden Layer 2: 1 node, Activation Function: tanh
+***Model 4:***
 
-    Hidden Layer 3: 5 nodes, Activation Function: tanh
+    Hidden layer 1: 5 units, Activation function: ReLU
+    Number of epochs: 20
 
-    Hidden Layer 4: 7 nodes, Activation Function: tanh
+*Confusion Matrix*
 
-    Hidden Layer 5: 9 nodes, Activation Function: tanh
+![](images/model_4_con_mtx.png)
 
-    Hidden Layer 6: 1 node, Activation Function: tanh
+*Classification Report:*
+
+![](images/model_4_class_rpt.png)
+
+*Accuracy Score:*
+
+![](images/model_4_accuracy.png)
+
+***Model 5:***
+
+    Hidden layer 1: 5 units, Activation function: ReLU
+    Number of epochs: 7
+
+*Confusion Matrix*
+
+![](images/model_5_con_mtx.png)
+
+*Classification Report:*
+
+![](images/model_5_class_rpt.png)
+
+*Accuracy Score:*
+
+![](images/model_5_accuracy.png)
+
 
 
 ## Official Model Overview- Neural Network
