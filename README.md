@@ -196,6 +196,15 @@ In our Neural Network model we achieved high precision and accuracy, correctly p
 
 ## FINAL MODEL SELECTION - OVERSAMPLED NEURAL NETWORK
 
+Our dataset is highly imbalanced because heart attacks are relatively rare. This means a high level of accuracy can be achieved by guessing "no heart attack" most of the time. To account for this, we oversampled the records that had a heart attack so that the model will guess a heart attack more often. This technique worked: the model had a higher recall for the records with heart attacks. However, overall accuracy dropped. This tradeoff is worth it because it's much better to predict a heart attack and have it not happen than to NOT predict a heart attack and have it happen unexpectedly. Below are the results for the model.
+
+**Classification Report**
+
+![](images/oversampled_classification_report.png)
+
+**Accuracy Score**
+
+![](images/oversampled_accuracy_score.png)
 
 ## Next Steps & Skepticism of Result
 
