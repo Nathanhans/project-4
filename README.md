@@ -175,25 +175,17 @@ Overall, this code sets up a neural network model creation method with tunable h
 
 
 
-## Official Model Overview- Neural Network
+## Secondary Model Attempt - Neural Network
 
 We chose to use a Neural Network model due to the nature of NN’s being able to learn and model relationships between input and output data that are more complex and nonlinear. Which we felt suited our data for our predictive analysis. 
 When building the model, there were several parameters to fill such as how many layers, how many nodes, and best fit activation function. In our model we used a total of 3 layers: 1 input layer, 1 hidden layer, and 1 output layer. 
 We used a Sigmoid activation across all 3 layers, given that it exists between 0 & 1, allowing us to predict those at risk of a heart attack which presented as 0s or 1s in our input data. 
 The number of units and epochs were decided through an exploratory process, as we reached high accuracy and low loss very early on when training our model.  
 
+## FINAL MODEL SELECTION - OVERSAMPLED NEURAL NETWORK
 
-## Model Performance
 
 ## Next Steps & Skepticism of Result
 
-100% accuracy, no false positives, no false negatives, accuracy was achieved after 2 Epochs!!!
-Lead us to believe that there was something cooked in the dataset, so we ran the entire process again on a different dataset.  AND…..
-100% accuracy, no false positives, no false negatives, accuracy was achieved after 2 Epochs!!!
+Model accuracy add limited value over guessing (92% accuracy). Potential next steps for improving model performance would be 1) optimize on recall instead of accuracy to improve correctly identified heart attacks 2) improve our data source to obtain more predictive information.
  
-
-
-## Conclusion
-
-CDC is really good at asking the right questions in telephone surveys?
-Both of the datasets that we used to test/train the model were ‘cooked’, or cherry picked.
