@@ -67,7 +67,7 @@ hyperparameter object 'hp' as input:**
 ![](images/kerastuner_library.png)
 
 * The Hyperband tuner (tuner) which takes in the create_model method defined earlier.
-T* he objective of the tuner is to maximize validation accuracy (val_accuracy).
+* The objective of the tuner is to maximize validation accuracy (val_accuracy).
 * max_epochs specifies the maximum number of epochs to train each model configuration.
 * hyperband_iterations specifies the number of times to apply the Hyperband algorithm. It's essentially a hyperparameter optimization algorithm that uses adaptive resource allocation and early stopping to quickly converge to a high-performing model.
 
@@ -75,7 +75,7 @@ T* he objective of the tuner is to maximize validation accuracy (val_accuracy).
 
 ![](images/tuner_search.png)
 
-* tuner.search initiates the hyperparameter search process.
+* tuner.search() initiates the hyperparameter search process.
 * It takes the training data (X_train_scaled, y_train_encoded) and validation data (X_test_scaled, y_test_encoded).
 * The search is performed over 20 epochs for each configuration 
 * The tuner will search for the best hyperparameters configuration within the specified search space.
