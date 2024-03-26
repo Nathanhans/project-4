@@ -12,15 +12,14 @@ Today, we'll explore how cutting-edge technologies, such as neural network model
 
 ## Summary and Key Findings
 
-We focused on leveraging advanced neural network modeling techniques. Utilizing data from CDC's BRFSS surveys, we identified crucial health indicators and uncovered strong correlations with variables like state of residence through exploratory analysis. Our model development, led by Sally and Kenia, utilized auto-optimization techniques to fine-tune hyperparameters. However, perfect accuracy in model performance metrics raised skepticism about dataset integrity, prompting further investigation into survey methodologies and potential biases.
+We focused on leveraging advanced neural network modeling techniques. Utilizing data from CDC's BRFSS surveys, we identified crucial health indicators and uncovered strong correlations with variables like state of residence through exploratory analysis. Our model development, led by Sally and Kenia, utilized auto-optimization techniques to fine-tune hyperparameters. 
 
 Key Factors 
 * Dataset - We utilized CDC's BRFSS surveys to collect key health indicators related to heart disease risk factors, refining the dataset to a smaller amount and more relevant variables.
 * Exploratory Analysis & Data Prep - Despite our attempts to streamline the dataset by reducing its complexity through dimensionality reduction, we discovered strong correlations between heart attack risk and diverse variables
 * Initial Model Attempt – We initiated exploration into neural network modeling using auto-optimization technique.
 * Final Model Overview - Our selected model architecture, emphasized key decisions including the choice of activation function, layers, nodes, and epochs.
-* Model Performance - The model's performance metrics, revealed remarkable accuracy but raised skepticism due to the absence of false positives or negatives.
-
+* Model Performance - 
 ## Data Source
 
 The dataset covers personal health indicators related to heart disease risk factors, sourced from the Centers for Disease Control and Prevention (CDC) as part of the Behavioral Risk Factor Surveillance System (BRFSS) surveys conducted annually across the United States.
@@ -176,25 +175,17 @@ Overall, this code sets up a neural network model creation method with tunable h
 
 
 
-## Official Model Overview- Neural Network
+## Secondary Model Attempt - Neural Network
 
 We chose to use a Neural Network model due to the nature of NN’s being able to learn and model relationships between input and output data that are more complex and nonlinear. Which we felt suited our data for our predictive analysis. 
 When building the model, there were several parameters to fill such as how many layers, how many nodes, and best fit activation function. In our model we used a total of 3 layers: 1 input layer, 1 hidden layer, and 1 output layer. 
 We used a Sigmoid activation across all 3 layers, given that it exists between 0 & 1, allowing us to predict those at risk of a heart attack which presented as 0s or 1s in our input data. 
 The number of units and epochs were decided through an exploratory process, as we reached high accuracy and low loss very early on when training our model.  
 
+## FINAL MODEL SELECTION - OVERSAMPLED NEURAL NETWORK
 
-## Model Performance
 
 ## Next Steps & Skepticism of Result
 
-100% accuracy, no false positives, no false negatives, accuracy was achieved after 2 Epochs!!!
-Lead us to believe that there was something cooked in the dataset, so we ran the entire process again on a different dataset.  AND…..
-100% accuracy, no false positives, no false negatives, accuracy was achieved after 2 Epochs!!!
+Model accuracy add limited value over guessing (92% accuracy). Potential next steps for improving model performance would be 1) optimize on recall instead of accuracy to improve correctly identified heart attacks 2) improve our data source to obtain more predictive information.
  
-
-
-## Conclusion
-
-CDC is really good at asking the right questions in telephone surveys?
-Both of the datasets that we used to test/train the model were ‘cooked’, or cherry picked.
