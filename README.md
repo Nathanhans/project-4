@@ -2,7 +2,8 @@
 # Heart Attack Risk: 
 ### Neural Network modeling of Heart Attack Risk
 
-
+## Presentation
+https://docs.google.com/presentation/d/1j4GrRyVQ4OPGIVQdZ02FH98Zbt-R-hUXOC7TxKLazB0/edit#slide=id.g29c552614be_0_50
 
 ## Introduction
 
