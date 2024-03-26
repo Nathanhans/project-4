@@ -177,10 +177,22 @@ Overall, this code sets up a neural network model creation method with tunable h
 
 ## Secondary Model Attempt - Neural Network
 
-We chose to use a Neural Network model due to the nature of NN’s being able to learn and model relationships between input and output data that are more complex and nonlinear. Which we felt suited our data for our predictive analysis. 
-When building the model, there were several parameters to fill such as how many layers, how many nodes, and best fit activation function. In our model we used a total of 3 layers: 1 input layer, 1 hidden layer, and 1 output layer. 
-We used a Sigmoid activation across all 3 layers, given that it exists between 0 & 1, allowing us to predict those at risk of a heart attack which presented as 0s or 1s in our input data. 
-The number of units and epochs were decided through an exploratory process, as we reached high accuracy and low loss very early on when training our model.  
+We chose to use a Neural Network model due to the nature of NN’s being able to learn and model relationships between input and output data that are more complex and nonlinear. Which we felt suited our data for predictive analysis. 
+When building the model, there were several parameters to fill such as how many layers, how many nodes, and best fit activation function. In our model we used a total of 6 layers: 1 input layer, 4 hidden layer, and 1 output layer. 
+We used a ReLu activation function for our input layer and Sigmoid activation across all 4 hidden layers and out layer. Given that the sigmoid function mathematically maps input data to a 0 or 1 allowing us to predict those at risk of a heart attack. 
+The number of units and epochs were decided through an exploratory process with around 40 epochs being the best suited for our model.  
+
+**Classification Report**
+
+<img width="434" alt="Screenshot 2024-03-25 at 4 52 57 PM" src="https://github.com/Nathanhans/project-4/assets/138411030/7279d337-2ea9-46db-bdc9-37cb09f1586d">
+
+**Accuracy Score** 
+
+<img width="761" alt="Screenshot 2024-03-25 at 7 26 14 PM" src="https://github.com/Nathanhans/project-4/assets/138411030/ed277ca0-0507-4172-b2f9-ecf45ae5d4e1">
+
+
+
+In our Neural Network model we achieved high precision and accuracy, correctly predicting a substantial amount of no heart attacks. While our model performed very well overall, we did note and observe a low recall percentage rate of false negatives. This tells us that there were missed opportunities in identifying more individuals with the risk of heart attacks. Given that there is a diverse range of symptoms and risks we know that we would need to work with our model to improve the models sensitivity in attempt to improve predictions for earlier intervention and overall life longevity. We decided to use the model that minimized false negatives, which are patients that had a heart attack but which were predicted to not have a heart attack.
 
 ## FINAL MODEL SELECTION - OVERSAMPLED NEURAL NETWORK
 
