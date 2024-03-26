@@ -19,8 +19,7 @@ Key Factors
 * Exploratory Analysis & Data Prep - Despite our attempts to streamline the dataset by reducing its complexity through dimensionality reduction, we discovered strong correlations between heart attack risk and diverse variables
 * Initial Model Attempt – We initiated exploration into neural network modeling using auto-optimization technique.
 * Final Model Overview - Our selected model architecture, emphasized key decisions including the choice of activation function, layers, nodes, and epochs.
-* Model Performance - The model's performance metrics, revealed remarkable accuracy but raised skepticism due to the absence of false positives or negatives.
-
+* Model Performance - 
 ## Data Source
 
 The dataset covers personal health indicators related to heart disease risk factors, sourced from the Centers for Disease Control and Prevention (CDC) as part of the Behavioral Risk Factor Surveillance System (BRFSS) surveys conducted annually across the United States.
