@@ -176,7 +176,7 @@ Results:
 
 * All models had 95% accuracy, which makes sense because the hyperband tuner was maximizing the accuracy.
 
-* Model 3 showed the best output, showing the most true negatives, which means the best outcome of predicted heart attacks and actual heart attacks.
+* Model 3 showed the best output, showing the most true positives, which means the best outcome of predicted heart attacks and actual heart attacks.
 
 * Although the accuracy was very high, the recall was very low at 24%, which is not a good representation of predicting heart attacks.
 
@@ -199,7 +199,7 @@ The number of units and epochs were decided through an exploratory process with 
 
 In our Neural Network model we achieved high precision and accuracy, correctly predicting a substantial amount of no heart attacks. While our model performed very well overall, we did note and observe a low recall percentage rate of false negatives. This tells us that there were missed opportunities in identifying more individuals with the risk of heart attack. Given that there is a diverse range of symptoms and risks, we know that we would need to work with our model to improve the models sensitivity in attempt to improve predictions for earlier intervention and overall life longevity. We decided to use the model that minimized false negatives, which are patients that had a heart attack but which were predicted to not have a heart attack.
 
-## Final Model SEelection - Oversampled Neural Network
+## Final Model Selection - Oversampled Neural Network
 
 Our dataset is highly imbalanced because heart attacks are relatively rare. This means a high level of accuracy can be achieved by guessing "no heart attack" most of the time. To account for this, we oversampled the records that had a heart attack so that the model will guess a heart attack more often. This technique worked: the model had a higher recall for the records with heart attacks. However, overall accuracy dropped. This tradeoff is worth it because it's much better to predict a heart attack and have it not happen than to NOT predict a heart attack and have it happen unexpectedly. Below are the results for the model.
 
